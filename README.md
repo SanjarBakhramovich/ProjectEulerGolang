@@ -1,0 +1,2 @@
+# ProjectEulerGolang
+My Training
