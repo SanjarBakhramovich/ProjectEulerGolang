@@ -18,10 +18,10 @@ func isPlndrm(num int) bool {
 	}
 	return true
 }
-func lrgstPlndrPrdct(fst, scnd int) int {
+func lrgstPlndrPrdct() int {
 	max := 0
-	for i := fst; i < 1000; i++ {
-		for j := scnd; j < 1000; j++ {
+	for i := 999; i >= 100; i-- {
+		for j := 999; j >= 100; j-- {
 			product := i * j
 			if product > max && isPlndrm(product) {
 				max = product
@@ -32,6 +32,6 @@ func lrgstPlndrPrdct(fst, scnd int) int {
 	return max
 }
 func main() {
-	max := lrgstPlndrPrdct(100, 100)
+	max := lrgstPlndrPrdct()
 	fmt.Println(max)
 }
