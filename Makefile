@@ -7,3 +7,7 @@ commit:
 
 push: commit
 	git push -u origin main
+
+
+# make push 
+# runs commit, then pushes to remote
